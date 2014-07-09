@@ -125,9 +125,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		82470BD01965B984000820DE /* SecondUnit */ = {
+		82470BD01965B984000820DE /* SecondUnit_FirstPractice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82470BF11965B984000820DE /* Build configuration list for PBXNativeTarget "SecondUnit" */;
+			buildConfigurationList = 82470BF11965B984000820DE /* Build configuration list for PBXNativeTarget "SecondUnit_FirstPractice" */;
 			buildPhases = (
 				82470BCD1965B984000820DE /* Sources */,
 				82470BCE1965B984000820DE /* Frameworks */,
@@ -137,7 +137,7 @@
 			);
 			dependencies = (
 			);
-			name = SecondUnit;
+			name = SecondUnit_FirstPractice;
 			productName = SecondUnit;
 			productReference = 82470BD11965B984000820DE /* SecondUnit.app */;
 			productType = "com.apple.product-type.application";
@@ -191,7 +191,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				82470BD01965B984000820DE /* SecondUnit */,
+				82470BD01965B984000820DE /* SecondUnit_FirstPractice */,
 				82470BE61965B984000820DE /* SecondUnitTests */,
 			);
 		};
@@ -241,7 +241,7 @@
 /* Begin PBXTargetDependency section */
 		82470BE91965B984000820DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 82470BD01965B984000820DE /* SecondUnit */;
+			target = 82470BD01965B984000820DE /* SecondUnit_FirstPractice */;
 			targetProxy = 82470BE81965B984000820DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -404,7 +404,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82470BF11965B984000820DE /* Build configuration list for PBXNativeTarget "SecondUnit" */ = {
+		82470BF11965B984000820DE /* Build configuration list for PBXNativeTarget "SecondUnit_FirstPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82470BF21965B984000820DE /* Debug */,
