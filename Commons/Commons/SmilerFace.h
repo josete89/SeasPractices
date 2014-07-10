@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef enum SmileType:NSInteger{
+    HappyFace = 1 ,
+    SeriousFace = 0,
+    SadFace = -1
+} SmileType;
 @interface SmilerFace : UIView
 
 @property float smile;
