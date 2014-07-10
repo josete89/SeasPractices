@@ -16,4 +16,7 @@
    <FileRef
       location = "group:ThirdUnit_FirstPractice/ThirdUnit_FirstPractice.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ThirdUnit_SecondPractice/ThirdUnit_SecondPractice.xcodeproj">
+   </FileRef>
 </Workspace>
