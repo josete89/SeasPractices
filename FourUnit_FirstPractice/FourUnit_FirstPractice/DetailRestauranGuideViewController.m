@@ -27,7 +27,9 @@
     
     self.nameTextField.text = _restauranGuide.name;
     self.telephoneTextField.text = _restauranGuide.telephone;
-    
+    [self.photoButton setTitle:nil forState:UIControlStateNormal];
+    self.imageView.hidden = NO;
+    self.imageView.image = [[UIImage alloc]initWithData:_restauranGuide.photgraph];
     switch (_restauranGuide.experience) {
         case HappyFace:
             [self.happyButton setSelected:YES];

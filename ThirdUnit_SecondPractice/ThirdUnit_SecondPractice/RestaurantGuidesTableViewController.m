@@ -32,8 +32,12 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     //Recovery Guides
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){
     self.restaurntaGuides = [UtilsSaveRestaurantGuide restoreRestaurantGuides];
-    [self.tableView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+           [self.tableView reloadData]; 
+        });
+    });
 }
 
 - (void)didReceiveMemoryWarning {

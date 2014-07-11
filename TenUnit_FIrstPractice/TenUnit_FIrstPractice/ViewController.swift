@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func pressObject(sender: AnyObject) {
+        var alert:UIAlertView = UIAlertView(title: "Swift", message: "Hola mundo", delegate: nil, cancelButtonTitle:"Ok");
+        alert.show();
+    }
+
 
 }
 

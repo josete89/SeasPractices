@@ -17,12 +17,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if (self.restoreFromTemp) {
+        RestauranGuide* rest  = [self populateRestaurnatGuide];
+        [UtilsSaveRestaurantGuide saveTemporaryRestaurantGuide:rest];
+    }
+    
+    self.title = _restauranGuide.name;
+    
+    self.nameTextField.text = _restauranGuide.name;
+    self.telephoneTextField.text = _restauranGuide.telephone;
+    
+    switch (_restauranGuide.experience) {
+        case HappyFace:
+            [self.happyButton setSelected:YES];
+            break;
+        case SeriousFace:
+            [self.seriousButton setSelected:YES];
+            break;
+        case SadFace:
+            [self.sadButton setSelected:YES];
+            break;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CreateRestaurantGuideViewController.h"
 
-@interface DetailRestauranGuideViewController : UIViewController
+
+@interface DetailRestauranGuideViewController : CreateRestaurantGuideViewController
+
+@property RestauranGuide* restauranGuide;
 
 @end

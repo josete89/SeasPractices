@@ -8,7 +8,9 @@
 
 #import "CreateRestaurantGuideViewController.h"
 
+@class CreateRestaurantGuideViewController;
 @interface CreateRestaurantGuideViewController ()
+
 
 @end
 
@@ -17,11 +19,118 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    RestauranGuide *rest = [UtilsSaveRestaurantGuide recoveryFromTempDir];
+    
+    if (rest) {
+        _nameTextField.text = rest.name;
+        _telephoneTextField.text = rest.telephone;
+        switch (rest.experience) {
+            case HappyFace:
+                [self.happyButton setSelected:YES];
+                break;
+            case SeriousFace:
+                [self.seriousButton setSelected:YES];
+                break;
+            case SadFace:
+                [self.sadButton setSelected:YES];
+                break;
+        }
+        self.restoreFromTemp = YES;
+    }
+    
+    if (self.restoreFromTemp && [self isKindOfClass:[CreateRestaurantGuideViewController class]]){
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Guia de restaurantes" message:@"Se ah recuperado una ficha" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alert show];
+    }
+    
+    _happyView.smile = HappyFace;
+    _seriousView.smile = SeriousFace;
+    _sadView.smile = SadFace;
+    
+    _nameTextField.delegate = self;
+    _telephoneTextField.delegate = self;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveTempState) name:UIApplicationWillResignActiveNotification object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)saveTempState{
+    RestauranGuide* restaurant = [self populateRestaurnatGuide];
+    if (restaurant.name) {
+        [UtilsSaveRestaurantGuide saveTemporaryRestaurantGuide:restaurant];
+    }
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
+- (IBAction)touchILikedButton:(id)sender {
+    
+    if (!self.happyButton.isSelected) {
+        [self.happyButton setSelected:YES];
+        [self.seriousButton setSelected:NO];
+        [self.sadButton setSelected:NO];
+    }
+    
+}
+- (IBAction)touchNotBadButton:(id)sender {
+    if (!self.seriousButton.isSelected) {
+        [self.seriousButton setSelected:YES];
+        [self.happyButton setSelected:NO];
+        [self.sadButton setSelected:NO];
+    }
+}
+- (IBAction)touchIdontLikeButton:(id)sender {
+    if (!self.sadButton.isSelected) {
+        [self.sadButton setSelected:YES];
+        [self.seriousButton setSelected:NO];
+        [self.happyButton setSelected:NO];
+    }
+}
+
+- (IBAction)saveButton:(id)sender {
+    
+    RestauranGuide* restaurantGuide = [self populateRestaurnatGuide];
+    
+    if ([UtilsSaveRestaurantGuide saveRestaurantGuide:restaurantGuide]){
+        [self.navigationController popViewControllerAnimated:YES];
+    }else{
+        UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"Guias de restaurantes" message:@"No se ha podido guradar la ficha,intentenlo de nuevo" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        
+        [alert show];
+    }
+
+}
+
+
+- (IBAction)touchButton:(id)sender {
+}
+
+- (IBAction)touchPhoto:(id)sender {
+}
+
+-(RestauranGuide*)populateRestaurnatGuide{
+    SmileType experience;
+    
+    if(self.happyButton.isSelected){
+        experience = HappyFace;
+    }else if (self.seriousButton.isSelected){
+        experience = SeriousFace;
+    }else if(self.sadButton.isSelected){
+        experience = SadFace;
+    }
+    
+    RestauranGuide* restaurantGuide = [[RestauranGuide alloc]initWithName:_nameTextField.text andTelephone:_telephoneTextField.text andExperience:experience];
+    
+    return restaurantGuide;
 }
 
 /*

@@ -7,15 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8828056E196EA5AC008EC4AB /* libCommons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88280569196EA555008EC4AB /* libCommons.a */; };
 		88BD26BB196DC1AB007CDE66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD26BA196DC1AB007CDE66 /* main.m */; };
 		88BD26BE196DC1AB007CDE66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD26BD196DC1AB007CDE66 /* AppDelegate.m */; };
 		88BD26C1196DC1AB007CDE66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD26C0196DC1AB007CDE66 /* ViewController.m */; };
 		88BD26C4196DC1AB007CDE66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BD26C2196DC1AB007CDE66 /* Main.storyboard */; };
 		88BD26C6196DC1AB007CDE66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BD26C5196DC1AB007CDE66 /* Images.xcassets */; };
 		88BD26D2196DC1AC007CDE66 /* SecondUnit_SecondPracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD26D1196DC1AC007CDE66 /* SecondUnit_SecondPracticeTests.m */; };
+		88BD26DD196DCF36007CDE66 /* SmilerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD26DC196DCF36007CDE66 /* SmilerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		88280568196EA555008EC4AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88280563196EA555008EC4AB /* Commons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8828052B196E984C008EC4AB;
+			remoteInfo = Commons;
+		};
+		8828056A196EA555008EC4AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88280563196EA555008EC4AB /* Commons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88280536196E984C008EC4AB;
+			remoteInfo = CommonsTests;
+		};
+		8828056C196EA5A6008EC4AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88280563196EA555008EC4AB /* Commons.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8828052A196E984C008EC4AB;
+			remoteInfo = Commons;
+		};
 		88BD26CC196DC1AC007CDE66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 88BD26AD196DC1AB007CDE66 /* Project object */;
@@ -26,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88280563196EA555008EC4AB /* Commons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Commons.xcodeproj; path = /Users/joseluis/Desktop/SeasPractices/SecondUnit_FirstPractice/../Commons/Commons.xcodeproj; sourceTree = "<absolute>"; };
 		88BD26B5196DC1AB007CDE66 /* SecondUnit_SecondPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondUnit_SecondPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BD26B9196DC1AB007CDE66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88BD26BA196DC1AB007CDE66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,6 +62,8 @@
 		88BD26CB196DC1AC007CDE66 /* SecondUnit_SecondPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondUnit_SecondPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BD26D0196DC1AC007CDE66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88BD26D1196DC1AC007CDE66 /* SecondUnit_SecondPracticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondUnit_SecondPracticeTests.m; sourceTree = "<group>"; };
+		88BD26DB196DCF36007CDE66 /* SmilerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmilerViewController.h; sourceTree = "<group>"; };
+		88BD26DC196DCF36007CDE66 /* SmilerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmilerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8828056E196EA5AC008EC4AB /* libCommons.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +85,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88280564196EA555008EC4AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88280569196EA555008EC4AB /* libCommons.a */,
+				8828056B196EA555008EC4AB /* CommonsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		88BD26AC196DC1AB007CDE66 = {
 			isa = PBXGroup;
 			children = (
+				88280563196EA555008EC4AB /* Commons.xcodeproj */,
 				88BD26B7196DC1AB007CDE66 /* SecondUnit_SecondPractice */,
 				88BD26CE196DC1AC007CDE66 /* SecondUnit_SecondPracticeTests */,
 				88BD26B6196DC1AB007CDE66 /* Products */,
@@ -86,6 +123,8 @@
 				88BD26C2196DC1AB007CDE66 /* Main.storyboard */,
 				88BD26C5196DC1AB007CDE66 /* Images.xcassets */,
 				88BD26B8196DC1AB007CDE66 /* Supporting Files */,
+				88BD26DB196DCF36007CDE66 /* SmilerViewController.h */,
+				88BD26DC196DCF36007CDE66 /* SmilerViewController.m */,
 			);
 			path = SecondUnit_SecondPractice;
 			sourceTree = "<group>";
@@ -130,6 +169,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8828056D196EA5A6008EC4AB /* PBXTargetDependency */,
 			);
 			name = SecondUnit_SecondPractice;
 			productName = SecondUnit_SecondPractice;
@@ -183,6 +223,12 @@
 			mainGroup = 88BD26AC196DC1AB007CDE66;
 			productRefGroup = 88BD26B6196DC1AB007CDE66 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 88280564196EA555008EC4AB /* Products */;
+					ProjectRef = 88280563196EA555008EC4AB /* Commons.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				88BD26B4196DC1AB007CDE66 /* SecondUnit_SecondPractice */,
@@ -190,6 +236,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		88280569196EA555008EC4AB /* libCommons.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCommons.a;
+			remoteRef = 88280568196EA555008EC4AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8828056B196EA555008EC4AB /* CommonsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CommonsTests.xctest;
+			remoteRef = 8828056A196EA555008EC4AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		88BD26B3196DC1AB007CDE66 /* Resources */ = {
@@ -215,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BD26DD196DCF36007CDE66 /* SmilerViewController.m in Sources */,
 				88BD26C1196DC1AB007CDE66 /* ViewController.m in Sources */,
 				88BD26BE196DC1AB007CDE66 /* AppDelegate.m in Sources */,
 				88BD26BB196DC1AB007CDE66 /* main.m in Sources */,
@@ -232,6 +296,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8828056D196EA5A6008EC4AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Commons;
+			targetProxy = 8828056C196EA5A6008EC4AB /* PBXContainerItemProxy */;
+		};
 		88BD26CD196DC1AC007CDE66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 88BD26B4196DC1AB007CDE66 /* SecondUnit_SecondPractice */;
@@ -332,9 +401,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+				);
 				INFOPLIST_FILE = SecondUnit_SecondPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /Users/joseluis/Desktop/SeasPractices/SecondUnit_FirstPractice/SecondUnit;
 			};
 			name = Debug;
 		};
@@ -343,9 +419,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+				);
 				INFOPLIST_FILE = SecondUnit_SecondPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /Users/joseluis/Desktop/SeasPractices/SecondUnit_FirstPractice/SecondUnit;
 			};
 			name = Release;
 		};
@@ -402,6 +485,7 @@
 				88BD26D7196DC1AC007CDE66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88BD26D8196DC1AC007CDE66 /* Build configuration list for PBXNativeTarget "SecondUnit_SecondPracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +494,7 @@
 				88BD26DA196DC1AC007CDE66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PruebaConsola.h"
 
 @interface ViewController ()
             
@@ -18,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *miNombre = @"Nacho";
+    
+    [PruebaConsola saludar:miNombre];
+    
 }
 
 - (void)didReceiveMemoryWarning {

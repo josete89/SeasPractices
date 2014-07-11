@@ -18,7 +18,6 @@
 @property (weak, nonatomic) IBOutlet SmilerFace *seriousView;
 @property (weak, nonatomic) IBOutlet SmilerFace *sadView;
 
-
 @property (weak, nonatomic) IBOutlet UIButton *happyButton;
 @property (weak, nonatomic) IBOutlet UIButton *seriousButton;
 @property (weak, nonatomic) IBOutlet UIButton *sadButton;
@@ -27,6 +26,10 @@
 @property BOOL restoreFromTemp;
 @property (weak, nonatomic) IBOutlet UIButton *photoButton;
 
+@property (weak, nonatomic) IBOutlet UITextField *latitudeTextField;
+@property (weak, nonatomic) IBOutlet UITextField *longuitudeTextField;
+
 -(RestauranGuide*)populateRestaurnatGuide;
 -(IBAction)saveButton:(id)sender;
+
 @end

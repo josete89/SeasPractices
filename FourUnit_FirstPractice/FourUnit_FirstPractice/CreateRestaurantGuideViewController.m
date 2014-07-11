@@ -9,8 +9,8 @@
 #import "CreateRestaurantGuideViewController.h"
 
 @class CreateRestaurantGuideViewController;
-@interface CreateRestaurantGuideViewController ()
 
+@interface CreateRestaurantGuideViewController ()
 
 @end
 
@@ -49,6 +49,7 @@
     
     _nameTextField.delegate = self;
     _telephoneTextField.delegate = self;
+    _imageView.hidden = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveTempState) name:UIApplicationWillResignActiveNotification object:nil];
 }
@@ -149,9 +150,82 @@
         experience = SadFace;
     }
     
-    RestauranGuide* restaurantGuide = [[RestauranGuide alloc]initWithName:_nameTextField.text andTelephone:_telephoneTextField.text andExperience:experience];
+    RestauranGuide* restaurantGuide = [[RestauranGuide alloc]initWithName:_nameTextField.text andTelephone:_telephoneTextField.text andExperience:experience andPhtograph:UIImageJPEGRepresentation(_imageView.image, 1.0)];
     
     return restaurantGuide;
+}
+
+-(IBAction)touchSavePhoto:(UIButton*)sender{
+    UIActionSheet *actionSheet = [UIActionSheet new];
+    
+    if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear]) {
+        [actionSheet addButtonWithTitle:@"Tomar una foto"];
+    }
+    
+    [actionSheet addButtonWithTitle:@"Elegir una foto"];
+    if (_imageView.image) {
+        [actionSheet addButtonWithTitle:@"Borrar foto"];
+    }
+    
+    [actionSheet setCancelButtonIndex:[actionSheet addButtonWithTitle:@"Cancelar"]];
+    [actionSheet setDelegate:self];
+    
+    
+    [actionSheet showFromRect:sender.frame inView:self.view animated:YES];
+}
+
+#pragma mark - UIActionSheetDelegate methods
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
+    
+    if ([buttonTitle isEqualToString:@"Tomar una foto"]) {
+        [self presentImagePickerForSourceType:UIImagePickerControllerSourceTypeCamera];
+    }
+    else if ([buttonTitle isEqualToString:@"Elegir una foto"]) {
+        [self presentImagePickerForSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
+    }
+    else if ([buttonTitle isEqualToString:@"Borrar foto"]) {
+        _imageView.image = nil;
+        [_photoButton setTitle:@"Añadir" forState:UIControlStateNormal];
+    }
+}
+
+- (void)presentImagePickerForSourceType:(UIImagePickerControllerSourceType)sourceType
+{
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.sourceType = sourceType;
+    picker.delegate = self;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    [self updateImage:info];
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)updateImage:(NSDictionary *)userInfo
+{
+    
+    /*
+     NSLog(@"OriginalImage : %@",[userInfo objectForKey:UIImagePickerControllerOriginalImage]);
+     NSLog(@"EditedImage : %@",[userInfo objectForKey:UIImagePickerControllerEditedImage]);
+     NSLog(@"CropRect : %@", NSStringFromCGRect([[userInfo objectForKey:UIImagePickerControllerCropRect] CGRectValue]));
+     NSLog(@"MediaType : %@",[userInfo objectForKey:UIImagePickerControllerMediaType]);
+     NSLog(@"ReferenceURL : %@",[userInfo objectForKey:UIImagePickerControllerReferenceURL]);
+     */
+    
+    UIImage *image = [userInfo objectForKey:UIImagePickerControllerOriginalImage];
+    
+    if (_imageView.isHidden) {
+        _imageView.hidden = NO;
+    }
+    [_photoButton setTitle:@"" forState:UIControlStateNormal];
+    _imageView.image = image;
 }
 
 /*

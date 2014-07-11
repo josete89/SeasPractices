@@ -42,6 +42,16 @@
     
 }
 
+- (IBAction)saveButton:(id)sender {
+    
+    if(![self.restauranGuide.name isEqualToString:self.nameTextField.text]){
+        [UtilsSaveRestaurantGuide removeRestaurantGuide:self.restauranGuide];
+    }
+    
+    [super saveButton:sender];
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

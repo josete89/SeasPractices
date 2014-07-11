@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SmilerFace.h"
+#import "Commons/SmilerFace.h"
 
 @interface ViewController ()
             
@@ -22,13 +22,13 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     //Happy face
-    _smilerFaceView.smile = 1.0;
+    _smilerFaceView.smile = HappyFace;
     
     //Serious face
-    //_smilerFaceView.smile = 0.0;
+    //_smilerFaceView.smile = SeriousFace;
     
     //Sad face
-    //_smilerFaceView.smile = -1.0;
+    //_smilerFaceView.smile = SadFace;
 }
 
 - (void)didReceiveMemoryWarning {

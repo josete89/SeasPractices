@@ -10,6 +10,8 @@
 
 @interface SmilerViewController ()
 
+@property (weak, nonatomic) IBOutlet SmilerFace *smilerFace;
+
 @end
 
 @implementation SmilerViewController
@@ -17,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.smilerFace.smile=self.smileType;
 }
 
 - (void)didReceiveMemoryWarning {

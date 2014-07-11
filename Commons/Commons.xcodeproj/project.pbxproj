@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8828052F196E984C008EC4AB /* Commons.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8828052E196E984C008EC4AB /* Commons.h */; };
-		88280531196E984C008EC4AB /* Commons.m in Sources */ = {isa = PBXBuildFile; fileRef = 88280530196E984C008EC4AB /* Commons.m */; };
 		88280537196E984C008EC4AB /* libCommons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8828052B196E984C008EC4AB /* libCommons.a */; };
+		88280547196E986B008EC4AB /* SmilerFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 88280546196E986B008EC4AB /* SmilerFace.m */; };
+		88280554196EA02D008EC4AB /* SmilerFace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88280545196E986B008EC4AB /* SmilerFace.h */; };
+		8828057D196EADC0008EC4AB /* RestauranGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 8828057C196EADC0008EC4AB /* RestauranGuide.m */; };
+		88280580196EB9D9008EC4AB /* UtilsSaveRestaurantGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 8828057F196EB9D9008EC4AB /* UtilsSaveRestaurantGuide.m */; };
+		88280584196EC04B008EC4AB /* RestauranGuide.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8828057B196EADC0008EC4AB /* RestauranGuide.h */; };
+		88280585196EC04B008EC4AB /* UtilsSaveRestaurantGuide.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8828057E196EB9D9008EC4AB /* UtilsSaveRestaurantGuide.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +33,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				8828052F196E984C008EC4AB /* Commons.h in CopyFiles */,
+				88280584196EC04B008EC4AB /* RestauranGuide.h in CopyFiles */,
+				88280585196EC04B008EC4AB /* UtilsSaveRestaurantGuide.h in CopyFiles */,
+				88280554196EA02D008EC4AB /* SmilerFace.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,10 +43,14 @@
 
 /* Begin PBXFileReference section */
 		8828052B196E984C008EC4AB /* libCommons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommons.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8828052E196E984C008EC4AB /* Commons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Commons.h; sourceTree = "<group>"; };
-		88280530196E984C008EC4AB /* Commons.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Commons.m; sourceTree = "<group>"; };
 		88280536196E984C008EC4AB /* CommonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8828053C196E984C008EC4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88280545196E986B008EC4AB /* SmilerFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmilerFace.h; sourceTree = "<group>"; };
+		88280546196E986B008EC4AB /* SmilerFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmilerFace.m; sourceTree = "<group>"; };
+		8828057B196EADC0008EC4AB /* RestauranGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestauranGuide.h; sourceTree = "<group>"; };
+		8828057C196EADC0008EC4AB /* RestauranGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestauranGuide.m; sourceTree = "<group>"; };
+		8828057E196EB9D9008EC4AB /* UtilsSaveRestaurantGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsSaveRestaurantGuide.h; sourceTree = "<group>"; };
+		8828057F196EB9D9008EC4AB /* UtilsSaveRestaurantGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsSaveRestaurantGuide.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +93,12 @@
 		8828052D196E984C008EC4AB /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				8828052E196E984C008EC4AB /* Commons.h */,
-				88280530196E984C008EC4AB /* Commons.m */,
+				88280545196E986B008EC4AB /* SmilerFace.h */,
+				88280546196E986B008EC4AB /* SmilerFace.m */,
+				8828057B196EADC0008EC4AB /* RestauranGuide.h */,
+				8828057C196EADC0008EC4AB /* RestauranGuide.m */,
+				8828057E196EB9D9008EC4AB /* UtilsSaveRestaurantGuide.h */,
+				8828057F196EB9D9008EC4AB /* UtilsSaveRestaurantGuide.m */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -194,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88280531196E984C008EC4AB /* Commons.m in Sources */,
+				88280580196EB9D9008EC4AB /* UtilsSaveRestaurantGuide.m in Sources */,
+				8828057D196EADC0008EC4AB /* RestauranGuide.m in Sources */,
+				88280547196E986B008EC4AB /* SmilerFace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +269,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -286,6 +303,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

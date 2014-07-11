@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RestauranGuide.h"
 
 @interface UtilsSaveRestaurantGuide : NSObject
+
+
++(BOOL)saveRestaurantGuide:(RestauranGuide*)restaurantGuide;
++(BOOL)saveTemporaryRestaurantGuide:(RestauranGuide*)restaurantGuide;
+
++(NSArray*)restoreRestaurantGuides;
++(RestauranGuide*)recoveryFromTempDir;
 
 @end

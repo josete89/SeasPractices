@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+@interface MapRestaurantViewController : UIViewController<MKMapViewDelegate>
 
-@interface MapRestaurantViewController : UIViewController
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end

@@ -95,18 +95,46 @@
         [self.happyButton setSelected:NO];
     }
 }
+- (IBAction)touchSavePhoto:(id)sender {
+}
 
 - (IBAction)saveButton:(id)sender {
     
     RestauranGuide* restaurantGuide = [self populateRestaurnatGuide];
     
-    if ([UtilsSaveRestaurantGuide saveRestaurantGuide:restaurantGuide]){
+     UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Guardando datos..."
+                                        message:@"\n"
+                                       delegate:self
+                              cancelButtonTitle:nil
+                              otherButtonTitles:nil];
+    
+    [alert show];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+        if ([UtilsSaveRestaurantGuide saveRestaurantGuide:restaurantGuide]){
+            //Use because save operation is very fast
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [alert dismissWithClickedButtonIndex:0 animated:YES];
+                [self.navigationController popViewControllerAnimated:YES];
+            });
+        }else{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [alert dismissWithClickedButtonIndex:0 animated:YES];
+                UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:@"Guias de restaurantes" message:@"No se ha podido guradar la ficha,intentenlo de nuevo" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                [alertView show];
+            });
+        }
+    });
+    
+    
+    
+    /*if ([UtilsSaveRestaurantGuide saveRestaurantGuide:restaurantGuide]){
         [self.navigationController popViewControllerAnimated:YES];
     }else{
         UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"Guias de restaurantes" message:@"No se ha podido guradar la ficha,intentenlo de nuevo" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         
         [alert show];
-    }
+    }*/
 
 }
 

@@ -49,6 +49,8 @@
     
     _nameTextField.delegate = self;
     _telephoneTextField.delegate = self;
+    _latitudeTextField.delegate = self;
+    _longuitudeTextField.delegate = self;
     _imageView.hidden = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveTempState) name:UIApplicationWillResignActiveNotification object:nil];
@@ -150,7 +152,10 @@
         experience = SadFace;
     }
     
-    RestauranGuide* restaurantGuide = [[RestauranGuide alloc]initWithName:_nameTextField.text andTelephone:_telephoneTextField.text andExperience:experience andPhtograph:UIImageJPEGRepresentation(_imageView.image, 1.0)];
+    NSNumber* latitude = _latitudeTextField.text ? [NSNumber numberWithFloat:_latitudeTextField.text.floatValue] : @0;
+    NSNumber* longuitude = _longuitudeTextField.text ? [NSNumber numberWithFloat:_longuitudeTextField.text.floatValue] : @0;
+    
+    RestauranGuide* restaurantGuide = [[RestauranGuide alloc]initWithName:_nameTextField.text andTelephone:_telephoneTextField.text andExperience:experience andPhtograph:UIImageJPEGRepresentation(_imageView.image, 1.0) andLatitude:latitude andLoguitude:longuitude];
     
     return restaurantGuide;
 }

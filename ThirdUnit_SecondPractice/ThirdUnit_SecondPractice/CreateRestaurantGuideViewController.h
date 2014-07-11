@@ -25,6 +25,8 @@
 
 @property BOOL restoreFromTemp;
 
+- (IBAction)touchButton:(id)sender;
+- (IBAction)touchPhoto:(id)sender;
 -(RestauranGuide*)populateRestaurnatGuide;
-
+-(IBAction)saveButton:(id)sender;
 @end

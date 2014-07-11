@@ -27,7 +27,11 @@
     
     self.nameTextField.text = _restauranGuide.name;
     self.telephoneTextField.text = _restauranGuide.telephone;
-    [self.photoButton setTitle:nil forState:UIControlStateNormal];
+    if(_restauranGuide.photgraph){
+        [self.photoButton setTitle:nil forState:UIControlStateNormal];
+    }
+    self.latitudeTextField.text = _restauranGuide.latitude.stringValue;
+    self.longuitudeTextField.text = _restauranGuide.longuitude.stringValue;
     self.imageView.hidden = NO;
     self.imageView.image = [[UIImage alloc]initWithData:_restauranGuide.photgraph];
     switch (_restauranGuide.experience) {

@@ -13,6 +13,10 @@
 		881C5436196F4DA400B5BBC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881C5434196F4DA400B5BBC9 /* Main.storyboard */; };
 		881C5438196F4DA400B5BBC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881C5437196F4DA400B5BBC9 /* Images.xcassets */; };
 		881C5444196F4DA400B5BBC9 /* FourUnit_FirstPracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C5443196F4DA400B5BBC9 /* FourUnit_FirstPracticeTests.m */; };
+		881C5453196F4E0000B5BBC9 /* RestaurantGuidesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C544E196F4E0000B5BBC9 /* RestaurantGuidesTableViewController.m */; };
+		881C5454196F4E0000B5BBC9 /* CreateRestaurantGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C5450196F4E0000B5BBC9 /* CreateRestaurantGuideViewController.m */; };
+		881C5455196F4E0000B5BBC9 /* DetailRestauranGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C5452196F4E0000B5BBC9 /* DetailRestauranGuideViewController.m */; };
+		881C5461196F558900B5BBC9 /* libCommons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 881C545C196F557A00B5BBC9 /* libCommons.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +26,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 881C5426196F4DA400B5BBC9;
 			remoteInfo = FourUnit_FirstPractice;
+		};
+		881C545B196F557A00B5BBC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 881C5456196F557A00B5BBC9 /* Commons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8828052B196E984C008EC4AB;
+			remoteInfo = Commons;
+		};
+		881C545D196F557A00B5BBC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 881C5456196F557A00B5BBC9 /* Commons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88280536196E984C008EC4AB;
+			remoteInfo = CommonsTests;
+		};
+		881C545F196F558400B5BBC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 881C5456196F557A00B5BBC9 /* Commons.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8828052A196E984C008EC4AB;
+			remoteInfo = Commons;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -38,6 +63,13 @@
 		881C543D196F4DA400B5BBC9 /* FourUnit_FirstPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourUnit_FirstPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		881C5442196F4DA400B5BBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881C5443196F4DA400B5BBC9 /* FourUnit_FirstPracticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourUnit_FirstPracticeTests.m; sourceTree = "<group>"; };
+		881C544D196F4E0000B5BBC9 /* RestaurantGuidesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantGuidesTableViewController.h; sourceTree = "<group>"; };
+		881C544E196F4E0000B5BBC9 /* RestaurantGuidesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantGuidesTableViewController.m; sourceTree = "<group>"; };
+		881C544F196F4E0000B5BBC9 /* CreateRestaurantGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateRestaurantGuideViewController.h; sourceTree = "<group>"; };
+		881C5450196F4E0000B5BBC9 /* CreateRestaurantGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateRestaurantGuideViewController.m; sourceTree = "<group>"; };
+		881C5451196F4E0000B5BBC9 /* DetailRestauranGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailRestauranGuideViewController.h; sourceTree = "<group>"; };
+		881C5452196F4E0000B5BBC9 /* DetailRestauranGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailRestauranGuideViewController.m; sourceTree = "<group>"; };
+		881C5456196F557A00B5BBC9 /* Commons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Commons.xcodeproj; path = ../Commons/Commons.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				881C5461196F558900B5BBC9 /* libCommons.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +94,7 @@
 		881C541E196F4DA400B5BBC9 = {
 			isa = PBXGroup;
 			children = (
+				881C5456196F557A00B5BBC9 /* Commons.xcodeproj */,
 				881C5429196F4DA400B5BBC9 /* FourUnit_FirstPractice */,
 				881C5440196F4DA400B5BBC9 /* FourUnit_FirstPracticeTests */,
 				881C5428196F4DA400B5BBC9 /* Products */,
@@ -79,6 +113,12 @@
 		881C5429196F4DA400B5BBC9 /* FourUnit_FirstPractice */ = {
 			isa = PBXGroup;
 			children = (
+				881C544D196F4E0000B5BBC9 /* RestaurantGuidesTableViewController.h */,
+				881C544E196F4E0000B5BBC9 /* RestaurantGuidesTableViewController.m */,
+				881C544F196F4E0000B5BBC9 /* CreateRestaurantGuideViewController.h */,
+				881C5450196F4E0000B5BBC9 /* CreateRestaurantGuideViewController.m */,
+				881C5451196F4E0000B5BBC9 /* DetailRestauranGuideViewController.h */,
+				881C5452196F4E0000B5BBC9 /* DetailRestauranGuideViewController.m */,
 				881C542E196F4DA400B5BBC9 /* AppDelegate.h */,
 				881C542F196F4DA400B5BBC9 /* AppDelegate.m */,
 				881C5431196F4DA400B5BBC9 /* ViewController.h */,
@@ -116,6 +156,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		881C5457196F557A00B5BBC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				881C545C196F557A00B5BBC9 /* libCommons.a */,
+				881C545E196F557A00B5BBC9 /* CommonsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,6 +179,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				881C5460196F558400B5BBC9 /* PBXTargetDependency */,
 			);
 			name = FourUnit_FirstPractice;
 			productName = FourUnit_FirstPractice;
@@ -183,6 +233,12 @@
 			mainGroup = 881C541E196F4DA400B5BBC9;
 			productRefGroup = 881C5428196F4DA400B5BBC9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 881C5457196F557A00B5BBC9 /* Products */;
+					ProjectRef = 881C5456196F557A00B5BBC9 /* Commons.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				881C5426196F4DA400B5BBC9 /* FourUnit_FirstPractice */,
@@ -190,6 +246,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		881C545C196F557A00B5BBC9 /* libCommons.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCommons.a;
+			remoteRef = 881C545B196F557A00B5BBC9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		881C545E196F557A00B5BBC9 /* CommonsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CommonsTests.xctest;
+			remoteRef = 881C545D196F557A00B5BBC9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		881C5425196F4DA400B5BBC9 /* Resources */ = {
@@ -216,6 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				881C5433196F4DA400B5BBC9 /* ViewController.m in Sources */,
+				881C5454196F4E0000B5BBC9 /* CreateRestaurantGuideViewController.m in Sources */,
+				881C5455196F4E0000B5BBC9 /* DetailRestauranGuideViewController.m in Sources */,
+				881C5453196F4E0000B5BBC9 /* RestaurantGuidesTableViewController.m in Sources */,
 				881C5430196F4DA400B5BBC9 /* AppDelegate.m in Sources */,
 				881C542D196F4DA400B5BBC9 /* main.m in Sources */,
 			);
@@ -236,6 +312,11 @@
 			isa = PBXTargetDependency;
 			target = 881C5426196F4DA400B5BBC9 /* FourUnit_FirstPractice */;
 			targetProxy = 881C543E196F4DA400B5BBC9 /* PBXContainerItemProxy */;
+		};
+		881C5460196F558400B5BBC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Commons;
+			targetProxy = 881C545F196F558400B5BBC9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -334,6 +415,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = FourUnit_FirstPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -345,6 +427,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = FourUnit_FirstPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Commons/SmilerFace.h"
 
 @interface SmilerViewController : UIViewController
+
+@property SmileType smileType;
 
 @end
