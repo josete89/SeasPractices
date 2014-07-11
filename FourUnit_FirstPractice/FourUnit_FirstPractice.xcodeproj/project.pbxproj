@@ -485,6 +485,7 @@
 				881C5449196F4DA400B5BBC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		881C544A196F4DA400B5BBC9 /* Build configuration list for PBXNativeTarget "FourUnit_FirstPracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +494,7 @@
 				881C544C196F4DA400B5BBC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -29,7 +29,10 @@ class WeatherCore{
     
     let urlWeather = "http://api.wunderground.com/api/";
     
-    
+    func createError(description:String,errorCode:Int,domain:String)->NSError{
+        let userInfo:[NSObject:String] = [NSLocalizedDescriptionKey:description,NSLocalizedFailureReasonErrorKey:description,NSLocalizedRecoverySuggestionErrorKey:description];
+        return  NSError(domain: domain, code: errorCode, userInfo: userInfo);
+    }
     
     func getWeatherFrom(country:String,city:String,completionClosure: (weather:Weather?,error:NSError?) -> ()){
         let url:String = self.urlWeather+self.apiKey+"/conditions/q/\(country)/\(city).json";
@@ -48,21 +51,16 @@ class WeatherCore{
             }
             else if(!jsonDict.valueForKey("current_observation") ){
                 
-                let userInfo:[NSObject:String] = [NSLocalizedDescriptionKey:"JSON not correct",NSLocalizedFailureReasonErrorKey:"JSON not correct",NSLocalizedRecoverySuggestionErrorKey:"JSON not correct"];
-                
-                error = NSError(domain: "WheatherApp", code: 500, userInfo: userInfo);
-                
+                error = self.createError("JSON not correct", errorCode: 500, domain: "WheatherApp");
                 completionClosure(weather: nil, error: error);
                 
             }else if(!jsonDict.valueForKey("current_observation").valueForKey("icon_url") ||
                 !jsonDict.valueForKey("current_observation").valueForKey("forecast_url") ||
                 !jsonDict.valueForKey("current_observation").valueForKey("temp_c")){
                 
-                    let userInfo:[NSObject:String] = [NSLocalizedDescriptionKey:"JSON not correct",NSLocalizedFailureReasonErrorKey:"JSON not correct",NSLocalizedRecoverySuggestionErrorKey:"JSON not correct"];
-                    
-                    error = NSError(domain: "WheatherApp", code: 500, userInfo: userInfo);
-                    
+                error = self.createError("JSON not correct", errorCode: 500, domain: "WheatherApp");
                 completionClosure(weather: nil, error: error);
+                    
             }else{
                 
                 let urlImage = jsonDict.valueForKey("current_observation").valueForKey("icon_url") as String;
