@@ -99,5 +99,113 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenUnit_SecondPractice/TenUnit_SecondPractice/WeatherCore.swift"
+            timestampString = "426778691.706677"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getWeatherFrom(_:city:completionClosure:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenUnit_SecondPractice/TenUnit_SecondPractice/WeatherCore.swift"
+            timestampString = "426779983.520727"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "getWeatherFrom(_:city:completionClosure:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenUnit_SecondPractice/TenUnit_SecondPractice/CityTableViewController.swift"
+            timestampString = "426781405.875362"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TenUnit_SecondPractice/TenUnit_SecondPractice/WeatherViewController.swift"
+            timestampString = "426783771.454194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenUnit_SecondPractice.WeatherViewController.(viewDidLoad (TenUnit_SecondPractice.WeatherViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "TenUnit_SecondPractice"
+                  urlString = "file:///Users/joseluis/Desktop/SeasPractices/TenUnit_SecondPractice/TenUnit_SecondPractice/WeatherViewController.swift"
+                  timestampString = "426783088.052285"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "45">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenUnit_SecondPractice.WeatherViewController.(viewDidLoad (TenUnit_SecondPractice.WeatherViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "TenUnit_SecondPractice"
+                  urlString = "file:///Users/joseluis/Desktop/SeasPractices/TenUnit_SecondPractice/TenUnit_SecondPractice/WeatherViewController.swift"
+                  timestampString = "426783088.052627"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "207">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TenUnit_SecondPractice.WeatherViewController.(viewDidLoad (TenUnit_SecondPractice.WeatherViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "TenUnit_SecondPractice"
+                  urlString = "file:///Users/joseluis/Desktop/SeasPractices/TenUnit_SecondPractice/TenUnit_SecondPractice/WeatherViewController.swift"
+                  timestampString = "426783088.052855"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1631">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
