@@ -119,11 +119,6 @@
 }
 
 
-- (IBAction)touchButton:(id)sender {
-}
-
-- (IBAction)touchPhoto:(id)sender {
-}
 
 -(RestauranGuide*)populateRestaurnatGuide{
     SmileType experience;

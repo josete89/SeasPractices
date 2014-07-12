@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FourUnit_FirstPractice/FourUnit_FirstPractice/CreateRestaurantGuideViewController.m"
-            timestampString = "426880068.887443"
+            timestampString = "426882020.649829"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
             landmarkName = "-updateImage:"
             landmarkType = "5">
          </BreakpointContent>

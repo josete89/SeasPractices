@@ -81,6 +81,17 @@
     return YES;
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = [[event allTouches] anyObject];
+    if ([_latitudeTextField isFirstResponder] && [touch view] != _latitudeTextField ) {
+        [_latitudeTextField resignFirstResponder];
+    }else if([_longuitudeTextField isFirstResponder] && [touch view] != _longuitudeTextField){
+        [_longuitudeTextField resignFirstResponder];
+    }
+    [super touchesBegan:touches withEvent:event];
+}
+
 - (IBAction)touchILikedButton:(id)sender {
     
     if (!self.happyButton.isSelected) {
