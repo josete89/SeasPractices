@@ -8,7 +8,7 @@
 
 #import "CreateRestaurantGuideViewController.h"
 
-@class CreateRestaurantGuideViewController;
+
 @interface CreateRestaurantGuideViewController ()
 
 
@@ -38,8 +38,8 @@
         self.restoreFromTemp = YES;
     }
     
-    if (self.restoreFromTemp && [self isKindOfClass:[CreateRestaurantGuideViewController class]]){
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Guia de restaurantes" message:@"Se ah recuperado una ficha" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    if (self.restoreFromTemp && !self.alertDontAppear){
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Guia de restaurantes" message:@"Se ha recuperado una ficha" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         [alert show];
     }
     
@@ -49,8 +49,10 @@
     
     _nameTextField.delegate = self;
     _telephoneTextField.delegate = self;
-    
+
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveTempState) name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(restoreState) name:UIApplicationDidBecomeActiveNotification object:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,6 +64,14 @@
     RestauranGuide* restaurant = [self populateRestaurnatGuide];
     if (restaurant.name) {
         [UtilsSaveRestaurantGuide saveTemporaryRestaurantGuide:restaurant];
+    }
+}
+
+
+-(void)restoreState{
+    RestauranGuide* restaurant = [self populateRestaurnatGuide];
+    if (restaurant.name) {
+        [UtilsSaveRestaurantGuide removeTempResturantGuide:restaurant];
     }
 }
 
@@ -154,6 +164,8 @@
     
     return restaurantGuide;
 }
+
+
 
 /*
 #pragma mark - Navigation

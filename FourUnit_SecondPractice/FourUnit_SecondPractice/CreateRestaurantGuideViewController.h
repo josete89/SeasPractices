@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *sadButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property BOOL alertDontAppear;
 @property BOOL restoreFromTemp;
 @property (weak, nonatomic) IBOutlet UIButton *photoButton;
 

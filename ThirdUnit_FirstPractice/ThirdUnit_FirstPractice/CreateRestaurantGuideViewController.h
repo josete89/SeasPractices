@@ -25,7 +25,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
-
+@property BOOL alertDontAppear;
 @property BOOL restoreFromTemp;
 
 -(RestauranGuide*)populateRestaurnatGuide;

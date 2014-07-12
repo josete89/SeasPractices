@@ -19,6 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    switch (self.smileType) {
+        case HappyFace:
+            self.title = @"Me gusta";
+            break;
+        case SeriousFace:
+            self.title = @"No esta mal";
+            break;
+        case SadFace:
+            self.title = @"No me gusta";
+            break;
+    }
+    
     self.smilerFace.smile=self.smileType;
 }
 

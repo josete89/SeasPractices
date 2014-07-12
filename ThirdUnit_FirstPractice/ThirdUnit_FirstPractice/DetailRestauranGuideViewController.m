@@ -15,9 +15,12 @@
 @implementation DetailRestauranGuideViewController
 
 - (void)viewDidLoad {
+    //Prevents see recovery message in edition
+    self.alertDontAppear = YES;
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    //For resave temp
     if (self.restoreFromTemp) {
         RestauranGuide* rest  = [self populateRestaurnatGuide];
         [UtilsSaveRestaurantGuide saveTemporaryRestaurantGuide:rest];

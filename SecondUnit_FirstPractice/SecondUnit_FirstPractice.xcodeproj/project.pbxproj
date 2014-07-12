@@ -104,10 +104,10 @@
 		82470BD31965B984000820DE /* SecondUnit_FirstPractice */ = {
 			isa = PBXGroup;
 			children = (
+				88E1F98119717DA2001A118A /* Views */,
+				88E1F97F19717D94001A118A /* Controllers */,
 				82470BD81965B984000820DE /* AppDelegate.h */,
 				82470BD91965B984000820DE /* AppDelegate.m */,
-				82470BDB1965B984000820DE /* ViewController.h */,
-				82470BDC1965B984000820DE /* ViewController.m */,
 				82470BDE1965B984000820DE /* Main.storyboard */,
 				82470BE11965B984000820DE /* Images.xcassets */,
 				82470BD41965B984000820DE /* Supporting Files */,
@@ -149,6 +149,22 @@
 				8828055E196EA255008EC4AB /* CommonsTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		88E1F97F19717D94001A118A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				82470BDB1965B984000820DE /* ViewController.h */,
+				82470BDC1965B984000820DE /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		88E1F98119717DA2001A118A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +417,7 @@
 					"/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
 				);
 				INFOPLIST_FILE = SecondUnit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,6 +434,7 @@
 					"/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
 				);
 				INFOPLIST_FILE = SecondUnit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -6,14 +6,15 @@
 //  Copyright (c) 2014 Seas. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "OptionsController.h"
 #import "SmilerViewController.h"
 #import "Commons/SmilerFace.h"
-@interface ViewController ()
+
+@interface OptionsController ()
 
 @end
 
-@implementation ViewController
+@implementation OptionsController
             
 - (void)viewDidLoad {
     [super viewDidLoad];

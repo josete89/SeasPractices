@@ -24,7 +24,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *sadButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @property BOOL restoreFromTemp;
+@property BOOL alertDontAppear;
+
 @property (weak, nonatomic) IBOutlet UIButton *photoButton;
 
 -(RestauranGuide*)populateRestaurnatGuide;

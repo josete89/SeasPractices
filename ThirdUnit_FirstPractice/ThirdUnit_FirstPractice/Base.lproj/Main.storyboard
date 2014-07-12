@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gtQ-fG-VeF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gtQ-fG-VeF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Creacion de una ficha-->
+        <!--Create Restaurant Guide View Controller - Creacion de una ficha-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController title="Creacion de una ficha" id="vXZ-lx-hvc" customClass="CreateRestaurantGuideViewController" sceneMemberID="viewController">
@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1w-DS-anG">
@@ -113,18 +113,20 @@
             </objects>
             <point key="canvasLocation" x="1652" y="-11"/>
         </scene>
-        <!--Fichas de restaurantes-->
+        <!--Restaurant Guides Table View Controller - Fichas de restaurantes-->
         <scene sceneID="YsW-rf-kcN">
             <objects>
                 <tableViewController id="vxW-yP-Mzt" customClass="RestaurantGuidesTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xFn-ih-8lf">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xFn-ih-8lf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantGuideCell" id="V8J-ZA-R40">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantGuideCell" id="V8J-ZA-R40">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V8J-ZA-R40" id="1yT-Oq-0ZH">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -137,12 +139,12 @@
                     <navigationItem key="navigationItem" title="Fichas de restaurantes" id="4mc-gU-rw8">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="YEm-9h-MpP">
                             <connections>
-                                <segue destination="vXZ-lx-hvc" kind="show" id="LNU-lj-E2Q"/>
+                                <segue destination="vXZ-lx-hvc" kind="push" id="LNU-lj-E2Q"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="EQX-YL-Jq5" kind="show" identifier="DetailSegue" id="IWv-gd-Fwd"/>
+                        <segue destination="EQX-YL-Jq5" kind="push" identifier="DetailSegue" id="IWv-gd-Fwd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEz-pa-EjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -167,7 +169,7 @@
             </objects>
             <point key="canvasLocation" x="365" y="215"/>
         </scene>
-        <!--Creacion de una ficha-->
+        <!--Detail Restauran Guide View Controller - Creacion de una ficha-->
         <scene sceneID="ycE-2E-Hqx">
             <objects>
                 <viewController title="Creacion de una ficha" id="EQX-YL-Jq5" customClass="DetailRestauranGuideViewController" sceneMemberID="viewController">
@@ -176,7 +178,7 @@
                         <viewControllerLayoutGuide type="bottom" id="iUZ-sc-HZJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="j94-SB-6Wf">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5M-O1-RkT">
@@ -277,4 +279,9 @@
             <point key="canvasLocation" x="1652" y="537"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
 </document>

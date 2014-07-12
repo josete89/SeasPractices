@@ -1,111 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vsx-4D-x4g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Vsx-4D-x4g">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Comidas-->
+        <!--View Controller - Platos-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="Comidas" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1d-KQ-ev3">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="88" y="225" width="158" height="30"/>
                                 <state key="normal" title="¿ Que segundos hay? ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4S1-f8-xe5" kind="show" id="VZG-BO-auv"/>
+                                    <segue destination="4S1-f8-xe5" kind="push" id="VZG-BO-auv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIf-kK-8BZ">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="81" y="130" width="159" height="30"/>
                                 <state key="normal" title="¿ Que primeros hay? ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zue-K1-UwZ" kind="show" id="JRz-uH-qLd"/>
+                                    <segue destination="zue-K1-UwZ" kind="push" id="JRz-uH-qLd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7s-OA-phC">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="94" y="322" width="146" height="30"/>
                                 <state key="normal" title="¿ Que postres hay? ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="c8a-PR-CVf" kind="show" id="Wo4-Wq-BS2"/>
+                                    <segue destination="c8a-PR-CVf" kind="push" id="Wo4-Wq-BS2"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="E7s-OA-phC" secondAttribute="bottom" constant="151" id="0eu-W9-LcZ"/>
-                            <constraint firstItem="aIf-kK-8BZ" firstAttribute="centerX" secondItem="A1d-KQ-ev3" secondAttribute="centerX" id="0hq-5X-eAT"/>
-                            <constraint firstItem="aIf-kK-8BZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="HrT-Dl-Cni"/>
-                            <constraint firstItem="E7s-OA-phC" firstAttribute="centerX" secondItem="A1d-KQ-ev3" secondAttribute="centerX" id="e36-Ft-ADX"/>
-                            <constraint firstItem="A1d-KQ-ev3" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="j0G-x5-RTv"/>
-                            <constraint firstItem="A1d-KQ-ev3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="l1A-uG-zZb"/>
+                            <constraint firstItem="aIf-kK-8BZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="81" id="0uN-Oe-BAE"/>
+                            <constraint firstItem="E7s-OA-phC" firstAttribute="top" secondItem="A1d-KQ-ev3" secondAttribute="bottom" constant="67" id="AEB-ew-cQt"/>
+                            <constraint firstItem="A1d-KQ-ev3" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="L5N-oc-w38"/>
+                            <constraint firstItem="aIf-kK-8BZ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Y1P-tj-amP"/>
+                            <constraint firstItem="A1d-KQ-ev3" firstAttribute="top" secondItem="aIf-kK-8BZ" secondAttribute="bottom" constant="65" id="aLH-DU-wXD"/>
+                            <constraint firstItem="aIf-kK-8BZ" firstAttribute="trailing" secondItem="E7s-OA-phC" secondAttribute="trailing" id="dIj-yT-2dw"/>
+                            <constraint firstItem="E7s-OA-phC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="94" id="ghM-LT-HZM"/>
+                            <constraint firstItem="A1d-KQ-ev3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="88" id="pwN-1C-zlW"/>
+                            <constraint firstItem="E7s-OA-phC" firstAttribute="centerX" secondItem="A1d-KQ-ev3" secondAttribute="centerX" id="x8m-sv-Ajv"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="A1d-KQ-ev3"/>
-                                <exclude reference="aIf-kK-8BZ"/>
-                                <exclude reference="E7s-OA-phC"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="0eu-W9-LcZ"/>
-                                <exclude reference="j0G-x5-RTv"/>
-                                <exclude reference="l1A-uG-zZb"/>
-                                <exclude reference="e36-Ft-ADX"/>
-                                <exclude reference="0hq-5X-eAT"/>
-                                <exclude reference="HrT-Dl-Cni"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="A1d-KQ-ev3"/>
-                                <include reference="aIf-kK-8BZ"/>
-                                <include reference="E7s-OA-phC"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="0eu-W9-LcZ"/>
-                                <include reference="j0G-x5-RTv"/>
-                                <include reference="l1A-uG-zZb"/>
-                                <include reference="e36-Ft-ADX"/>
-                                <include reference="0hq-5X-eAT"/>
-                                <include reference="HrT-Dl-Cni"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="Vnb-3X-kbK"/>
+                    <navigationItem key="navigationItem" title="Platos" id="Vnb-3X-kbK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1318.5" y="-232.5"/>
+            <point key="canvasLocation" x="1332" y="-217"/>
         </scene>
-        <!--Primeros-->
+        <!--Options Controller - Primeros-->
         <scene sceneID="yNm-71-fXG">
             <objects>
-                <viewController title="Primeros" id="zue-K1-UwZ" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Primeros" id="zue-K1-UwZ" customClass="OptionsController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="umm-RM-mzA"/>
                         <viewControllerLayoutGuide type="bottom" id="i9e-Zb-L5b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iOd-uy-U8b">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXF-DW-9EO">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="137" y="307" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="IVI-Ed-yOK"/>
+                                </constraints>
                                 <state key="normal" title="Tofu">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -114,7 +88,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awf-f4-9Bc">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="119" y="156" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="ASk-x3-Hx8"/>
+                                </constraints>
                                 <state key="normal" title="Ensalda">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -123,7 +100,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TW-EI-FGY">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="75" y="225" width="170" height="30"/>
                                 <state key="normal" title="Champiñoes braseados">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -134,45 +111,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="awf-f4-9Bc" firstAttribute="top" secondItem="umm-RM-mzA" secondAttribute="bottom" constant="107" id="JsF-kR-hy7"/>
-                            <constraint firstItem="9TW-EI-FGY" firstAttribute="centerX" secondItem="gXF-DW-9EO" secondAttribute="centerX" id="U3I-oa-zQO"/>
-                            <constraint firstItem="9TW-EI-FGY" firstAttribute="top" secondItem="awf-f4-9Bc" secondAttribute="bottom" constant="72" id="eXe-ED-otV"/>
-                            <constraint firstItem="gXF-DW-9EO" firstAttribute="top" secondItem="9TW-EI-FGY" secondAttribute="bottom" constant="72" id="hRb-OY-Nyd"/>
-                            <constraint firstItem="9TW-EI-FGY" firstAttribute="centerX" secondItem="iOd-uy-U8b" secondAttribute="centerX" id="nEx-GA-Kgv"/>
-                            <constraint firstItem="awf-f4-9Bc" firstAttribute="centerX" secondItem="9TW-EI-FGY" secondAttribute="centerX" id="uPH-GX-Hn1"/>
+                            <constraint firstItem="gXF-DW-9EO" firstAttribute="centerX" secondItem="9TW-EI-FGY" secondAttribute="centerX" id="5zr-ZL-VID"/>
+                            <constraint firstItem="9TW-EI-FGY" firstAttribute="leading" secondItem="iOd-uy-U8b" secondAttribute="leading" constant="75" id="8y3-qA-WLs"/>
+                            <constraint firstItem="gXF-DW-9EO" firstAttribute="top" secondItem="9TW-EI-FGY" secondAttribute="bottom" constant="52" id="HH9-GM-zOV"/>
+                            <constraint firstItem="9TW-EI-FGY" firstAttribute="centerX" secondItem="iOd-uy-U8b" secondAttribute="centerX" id="HZi-7n-vS1"/>
+                            <constraint firstItem="9TW-EI-FGY" firstAttribute="centerX" secondItem="awf-f4-9Bc" secondAttribute="centerX" id="Jah-WI-GSU"/>
+                            <constraint firstItem="9TW-EI-FGY" firstAttribute="centerY" secondItem="iOd-uy-U8b" secondAttribute="centerY" id="WgZ-Xh-qek"/>
+                            <constraint firstItem="9TW-EI-FGY" firstAttribute="top" secondItem="awf-f4-9Bc" secondAttribute="bottom" constant="39" id="zrf-y8-h2T"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="gXF-DW-9EO"/>
-                                <exclude reference="awf-f4-9Bc"/>
-                                <exclude reference="9TW-EI-FGY"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="U3I-oa-zQO"/>
-                                <exclude reference="eXe-ED-otV"/>
-                                <exclude reference="nEx-GA-Kgv"/>
-                                <exclude reference="JsF-kR-hy7"/>
-                                <exclude reference="uPH-GX-Hn1"/>
-                                <exclude reference="hRb-OY-Nyd"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="gXF-DW-9EO"/>
-                                <include reference="awf-f4-9Bc"/>
-                                <include reference="9TW-EI-FGY"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="U3I-oa-zQO"/>
-                                <include reference="eXe-ED-otV"/>
-                                <include reference="nEx-GA-Kgv"/>
-                                <include reference="JsF-kR-hy7"/>
-                                <include reference="uPH-GX-Hn1"/>
-                                <include reference="hRb-OY-Nyd"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wj6-xp-GjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -197,70 +143,60 @@
             </objects>
             <point key="canvasLocation" x="606" y="-237"/>
         </scene>
-        <!--Segundos-->
+        <!--Options Controller - Segundos-->
         <scene sceneID="ZSF-t2-iod">
             <objects>
-                <viewController title="Segundos" id="4S1-f8-xe5" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Segundos" id="4S1-f8-xe5" customClass="OptionsController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vIX-cq-8RA"/>
                         <viewControllerLayoutGuide type="bottom" id="koT-HD-gEi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aPb-tU-i91">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAd-tv-8tN">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="93" y="160" width="134" height="30"/>
                                 <state key="normal" title="Sopas de ajo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="115" y="302" width="90" height="35"/>
-                                </variation>
                                 <connections>
                                     <segue destination="VdC-Pd-4Aa" kind="push" identifier="SoapSad" id="zrM-pe-OBO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wv-mI-gge">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="137" y="225" width="46" height="30"/>
                                 <state key="normal" title="Carne">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="139" y="168" width="42" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="VdC-Pd-4Aa" kind="push" identifier="MeatSerious" id="Us8-PU-g2J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Onc-Io-6WN">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="123" y="288" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="GVs-jB-UQF"/>
+                                </constraints>
                                 <state key="normal" title="Pescado">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="130" y="440" width="60" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="VdC-Pd-4Aa" kind="push" identifier="FishHappy" id="toJ-BE-5d3"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="fAd-tv-8tN"/>
-                                <exclude reference="4Wv-mI-gge"/>
-                                <exclude reference="Onc-Io-6WN"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="fAd-tv-8tN"/>
-                                <include reference="4Wv-mI-gge"/>
-                                <include reference="Onc-Io-6WN"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstItem="4Wv-mI-gge" firstAttribute="centerY" secondItem="aPb-tU-i91" secondAttribute="centerY" id="6Of-2V-OEz"/>
+                            <constraint firstItem="Onc-Io-6WN" firstAttribute="centerX" secondItem="aPb-tU-i91" secondAttribute="centerX" id="GKC-Gq-lIk"/>
+                            <constraint firstItem="Onc-Io-6WN" firstAttribute="top" secondItem="4Wv-mI-gge" secondAttribute="bottom" constant="33" id="TWL-Vd-jlk"/>
+                            <constraint firstItem="Onc-Io-6WN" firstAttribute="centerX" secondItem="4Wv-mI-gge" secondAttribute="centerX" id="TYx-s3-yoj"/>
+                            <constraint firstItem="fAd-tv-8tN" firstAttribute="centerX" secondItem="4Wv-mI-gge" secondAttribute="centerX" id="VZu-ME-YiK"/>
+                            <constraint firstItem="4Wv-mI-gge" firstAttribute="leading" secondItem="aPb-tU-i91" secondAttribute="leading" constant="137" id="fTG-jm-qP3"/>
+                            <constraint firstItem="fAd-tv-8tN" firstAttribute="leading" secondItem="aPb-tU-i91" secondAttribute="leading" constant="93" id="lMH-Hx-iR0"/>
+                            <constraint firstItem="4Wv-mI-gge" firstAttribute="top" secondItem="fAd-tv-8tN" secondAttribute="bottom" constant="35" id="vmk-aH-i5w"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ac-Rq-FSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -276,28 +212,15 @@
                         <viewControllerLayoutGuide type="bottom" id="oee-iO-r0M"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XJJ-1z-ihu">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUi-PG-QRZ" customClass="SmilerFace">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dUi-PG-QRZ" customClass="SmilerFace">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="29" y="189" width="262" height="262"/>
-                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="dUi-PG-QRZ"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="dUi-PG-QRZ"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="FaV-5w-VVR"/>
                     <connections>
@@ -308,70 +231,61 @@
             </objects>
             <point key="canvasLocation" x="3111" y="-237"/>
         </scene>
-        <!--Postres-->
+        <!--Options Controller - Postres-->
         <scene sceneID="4UL-TI-mgW">
             <objects>
-                <viewController title="Postres" id="c8a-PR-CVf" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Postres" id="c8a-PR-CVf" customClass="OptionsController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iB0-Vn-6d9"/>
                         <viewControllerLayoutGuide type="bottom" id="e85-Uc-bR1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="w2L-UT-CsI">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cup-21-YQl">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Foundat">
+                                <rect key="frame" x="89" y="149" width="142" height="30"/>
+                                <state key="normal" title="Fondat de chocolate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="132" y="188" width="57" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="VdC-Pd-4Aa" kind="push" identifier="FoundatHappy" id="ILn-zj-dJK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1G-Nm-NhZ">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="113" y="225" width="95" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="8Vy-JS-PaZ"/>
+                                </constraints>
                                 <state key="normal" title="Galletas">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="131" y="450" width="56" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="VdC-Pd-4Aa" kind="push" identifier="CookiesHappy" id="J8r-tu-sBv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-eC-cwn">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="106" y="302" width="108" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="w6Y-Hx-ZcT"/>
+                                </constraints>
                                 <state key="normal" title="Coulant">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="132" y="312" width="54" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="VdC-Pd-4Aa" kind="push" identifier="CoulantHappy" id="sIT-L3-Uwj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Cup-21-YQl"/>
-                                <exclude reference="z1G-Nm-NhZ"/>
-                                <exclude reference="s2X-eC-cwn"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="Cup-21-YQl"/>
-                                <include reference="z1G-Nm-NhZ"/>
-                                <include reference="s2X-eC-cwn"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstItem="s2X-eC-cwn" firstAttribute="centerX" secondItem="z1G-Nm-NhZ" secondAttribute="centerX" id="6XY-3z-hk2"/>
+                            <constraint firstItem="z1G-Nm-NhZ" firstAttribute="centerY" secondItem="w2L-UT-CsI" secondAttribute="centerY" id="Hyn-vW-5LN"/>
+                            <constraint firstItem="Cup-21-YQl" firstAttribute="centerX" secondItem="z1G-Nm-NhZ" secondAttribute="centerX" id="QPq-0Z-aWW"/>
+                            <constraint firstItem="s2X-eC-cwn" firstAttribute="top" secondItem="z1G-Nm-NhZ" secondAttribute="bottom" constant="47" id="RyK-rX-z7c"/>
+                            <constraint firstItem="z1G-Nm-NhZ" firstAttribute="top" secondItem="Cup-21-YQl" secondAttribute="bottom" constant="46" id="knc-0A-52f"/>
+                            <constraint firstItem="Cup-21-YQl" firstAttribute="centerX" secondItem="w2L-UT-CsI" secondAttribute="centerX" id="pFq-2u-7aD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omZ-qv-csQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -379,6 +293,11 @@
             <point key="canvasLocation" x="2215.5" y="356.25"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="qd8-7h-MuN"/>
     </inferredMetricsTieBreakers>

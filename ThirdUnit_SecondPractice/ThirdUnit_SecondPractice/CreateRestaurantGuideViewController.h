@@ -23,10 +23,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *seriousButton;
 @property (weak, nonatomic) IBOutlet UIButton *sadButton;
 
+@property BOOL alertDontAppear;
 @property BOOL restoreFromTemp;
 
-- (IBAction)touchButton:(id)sender;
-- (IBAction)touchPhoto:(id)sender;
 -(RestauranGuide*)populateRestaurnatGuide;
 -(IBAction)saveButton:(id)sender;
+
 @end

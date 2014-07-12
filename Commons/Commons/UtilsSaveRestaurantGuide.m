@@ -40,9 +40,15 @@
     
 }
 
-+(BOOL)removeRestaurantGuide:(RestauranGuide*)restaurantGuide{
++(BOOL)removeRestaurantGuide:(RestauranGuide*)restaurantGuide;
+{
     NSString* directory = [NSHomeDirectory() stringByAppendingPathComponent:
-                      @"Documents"];
+                           @"Documents"];
+    return [self removeRestaurantGuide:restaurantGuide fromDirectory:directory];
+}
+
++(BOOL)removeRestaurantGuide:(RestauranGuide*)restaurantGuide fromDirectory:(NSString*)directory{
+    
     NSFileManager* fileManager = [NSFileManager defaultManager];
     NSError* error;
     NSString *fileName = [restaurantGuide.name stringByAppendingPathExtension:@"data"];
@@ -55,7 +61,10 @@
     }else{
         return YES;
     }
-    
+}
+
++(BOOL)removeTempResturantGuide:(RestauranGuide*)restaurantGuide{
+    return [self removeRestaurantGuide:restaurantGuide fromDirectory:NSTemporaryDirectory()];
 }
 
 +(NSArray*)restoreRestaurantGuides{

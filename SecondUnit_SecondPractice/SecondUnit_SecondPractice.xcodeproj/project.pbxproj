@@ -10,7 +10,7 @@
 		8828056E196EA5AC008EC4AB /* libCommons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88280569196EA555008EC4AB /* libCommons.a */; };
 		88BD26BB196DC1AB007CDE66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD26BA196DC1AB007CDE66 /* main.m */; };
 		88BD26BE196DC1AB007CDE66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD26BD196DC1AB007CDE66 /* AppDelegate.m */; };
-		88BD26C1196DC1AB007CDE66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD26C0196DC1AB007CDE66 /* ViewController.m */; };
+		88BD26C1196DC1AB007CDE66 /* OptionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD26C0196DC1AB007CDE66 /* OptionsController.m */; };
 		88BD26C4196DC1AB007CDE66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BD26C2196DC1AB007CDE66 /* Main.storyboard */; };
 		88BD26C6196DC1AB007CDE66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BD26C5196DC1AB007CDE66 /* Images.xcassets */; };
 		88BD26D2196DC1AC007CDE66 /* SecondUnit_SecondPracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD26D1196DC1AC007CDE66 /* SecondUnit_SecondPracticeTests.m */; };
@@ -55,8 +55,8 @@
 		88BD26BA196DC1AB007CDE66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88BD26BC196DC1AB007CDE66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88BD26BD196DC1AB007CDE66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		88BD26BF196DC1AB007CDE66 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		88BD26C0196DC1AB007CDE66 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		88BD26BF196DC1AB007CDE66 /* OptionsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionsController.h; sourceTree = "<group>"; };
+		88BD26C0196DC1AB007CDE66 /* OptionsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionsController.m; sourceTree = "<group>"; };
 		88BD26C3196DC1AB007CDE66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88BD26C5196DC1AB007CDE66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		88BD26CB196DC1AC007CDE66 /* SecondUnit_SecondPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondUnit_SecondPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,15 +116,13 @@
 		88BD26B7196DC1AB007CDE66 /* SecondUnit_SecondPractice */ = {
 			isa = PBXGroup;
 			children = (
+				88E1F98F197188FA001A118A /* Views */,
+				88E1F98D197188C8001A118A /* Controllers */,
 				88BD26BC196DC1AB007CDE66 /* AppDelegate.h */,
 				88BD26BD196DC1AB007CDE66 /* AppDelegate.m */,
-				88BD26BF196DC1AB007CDE66 /* ViewController.h */,
-				88BD26C0196DC1AB007CDE66 /* ViewController.m */,
 				88BD26C2196DC1AB007CDE66 /* Main.storyboard */,
 				88BD26C5196DC1AB007CDE66 /* Images.xcassets */,
 				88BD26B8196DC1AB007CDE66 /* Supporting Files */,
-				88BD26DB196DCF36007CDE66 /* SmilerViewController.h */,
-				88BD26DC196DCF36007CDE66 /* SmilerViewController.m */,
 			);
 			path = SecondUnit_SecondPractice;
 			sourceTree = "<group>";
@@ -153,6 +151,24 @@
 				88BD26D0196DC1AC007CDE66 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88E1F98D197188C8001A118A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88BD26BF196DC1AB007CDE66 /* OptionsController.h */,
+				88BD26C0196DC1AB007CDE66 /* OptionsController.m */,
+				88BD26DB196DCF36007CDE66 /* SmilerViewController.h */,
+				88BD26DC196DCF36007CDE66 /* SmilerViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		88E1F98F197188FA001A118A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88BD26DD196DCF36007CDE66 /* SmilerViewController.m in Sources */,
-				88BD26C1196DC1AB007CDE66 /* ViewController.m in Sources */,
+				88BD26C1196DC1AB007CDE66 /* OptionsController.m in Sources */,
 				88BD26BE196DC1AB007CDE66 /* AppDelegate.m in Sources */,
 				88BD26BB196DC1AB007CDE66 /* main.m in Sources */,
 			);
@@ -406,6 +422,7 @@
 					"/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
 				);
 				INFOPLIST_FILE = SecondUnit_SecondPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
@@ -424,6 +441,7 @@
 					"/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
 				);
 				INFOPLIST_FILE = SecondUnit_SecondPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
