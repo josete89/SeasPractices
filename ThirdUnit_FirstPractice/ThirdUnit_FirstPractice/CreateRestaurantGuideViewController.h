@@ -29,5 +29,6 @@
 @property BOOL restoreFromTemp;
 
 -(RestauranGuide*)populateRestaurnatGuide;
+-(IBAction)saveButton:(id)sender;
 
 @end
