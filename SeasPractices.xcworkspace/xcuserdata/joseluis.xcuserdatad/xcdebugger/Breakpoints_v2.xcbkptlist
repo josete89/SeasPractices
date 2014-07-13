@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FourUnit_FirstPractice/FourUnit_FirstPractice/CreateRestaurantGuideViewController.m"
-            timestampString = "426882020.649829"
+            timestampString = "426942446.528269"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "-updateImage:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FourUnit_SecondPractice/FourUnit_SecondPractice/MapRestaurantViewController.m"
-            timestampString = "426768469.607475"
+            timestampString = "426945770.006801"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "-mapView:viewForAnnotation:"
             landmarkType = "5">
          </BreakpointContent>

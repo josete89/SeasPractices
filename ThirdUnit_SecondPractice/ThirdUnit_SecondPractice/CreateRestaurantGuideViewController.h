@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Commons/UtilsSaveRestaurantGuide.h"
 
-@interface CreateRestaurantGuideViewController : UIViewController<UITextFieldDelegate>
+@interface CreateRestaurantGuideViewController : UIViewController<UITextFieldDelegate,UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *telephoneTextField;

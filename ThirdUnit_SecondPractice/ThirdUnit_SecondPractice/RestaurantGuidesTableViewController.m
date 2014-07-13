@@ -34,6 +34,7 @@
     //Recovery Guides
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){
     self.restaurntaGuides = [UtilsSaveRestaurantGuide restoreRestaurantGuides];
+        //Do UI changes in main thread
         dispatch_async(dispatch_get_main_queue(), ^(void){
            [self.tableView reloadData]; 
         });

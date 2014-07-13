@@ -110,12 +110,8 @@
 		881C53E5196F424D00B5BBC9 /* ThirdUnit_SecondPractice */ = {
 			isa = PBXGroup;
 			children = (
-				881C5409196F429B00B5BBC9 /* RestaurantGuidesTableViewController.h */,
-				881C540A196F429B00B5BBC9 /* RestaurantGuidesTableViewController.m */,
-				881C540B196F429B00B5BBC9 /* CreateRestaurantGuideViewController.h */,
-				881C540C196F429B00B5BBC9 /* CreateRestaurantGuideViewController.m */,
-				881C540D196F429B00B5BBC9 /* DetailRestauranGuideViewController.h */,
-				881C540E196F429B00B5BBC9 /* DetailRestauranGuideViewController.m */,
+				88B9D6B8197297C6008F1B60 /* View */,
+				88B9D6B7197297BF008F1B60 /* Controllers */,
 				881C53EA196F424D00B5BBC9 /* AppDelegate.h */,
 				881C53EB196F424D00B5BBC9 /* AppDelegate.m */,
 				881C53F0196F424D00B5BBC9 /* Main.storyboard */,
@@ -158,6 +154,26 @@
 				881C541A196F451900B5BBC9 /* CommonsTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		88B9D6B7197297BF008F1B60 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				881C5409196F429B00B5BBC9 /* RestaurantGuidesTableViewController.h */,
+				881C540A196F429B00B5BBC9 /* RestaurantGuidesTableViewController.m */,
+				881C540B196F429B00B5BBC9 /* CreateRestaurantGuideViewController.h */,
+				881C540C196F429B00B5BBC9 /* CreateRestaurantGuideViewController.m */,
+				881C540D196F429B00B5BBC9 /* DetailRestauranGuideViewController.h */,
+				881C540E196F429B00B5BBC9 /* DetailRestauranGuideViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		88B9D6B8197297C6008F1B60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

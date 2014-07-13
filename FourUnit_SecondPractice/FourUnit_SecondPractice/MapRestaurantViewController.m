@@ -31,6 +31,10 @@
         [annotations addObject:annotation];
     }
     
+    //Zooms to first RestaurantAnnotation
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(((RestaurantAnnotation*)[annotations firstObject]).coordinate, 2000, 2000);
+    [_mapView setRegion:viewRegion animated:YES];
+    
     [self.mapView addAnnotations:annotations.copy];
     
     self.mapView.delegate = self;
