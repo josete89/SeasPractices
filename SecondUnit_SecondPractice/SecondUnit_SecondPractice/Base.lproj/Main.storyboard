@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Vsx-4D-x4g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Vsx-4D-x4g">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Platos-->
+        <!--Platos-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
@@ -63,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="1332" y="-217"/>
         </scene>
-        <!--Options Controller - Primeros-->
+        <!--Primeros-->
         <scene sceneID="yNm-71-fXG">
             <objects>
                 <viewController title="Primeros" id="zue-K1-UwZ" customClass="OptionsController" sceneMemberID="viewController">
@@ -143,7 +144,7 @@
             </objects>
             <point key="canvasLocation" x="606" y="-237"/>
         </scene>
-        <!--Options Controller - Segundos-->
+        <!--Segundos-->
         <scene sceneID="ZSF-t2-iod">
             <objects>
                 <viewController title="Segundos" id="4S1-f8-xe5" customClass="OptionsController" sceneMemberID="viewController">
@@ -231,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="3111" y="-237"/>
         </scene>
-        <!--Options Controller - Postres-->
+        <!--Postres-->
         <scene sceneID="4UL-TI-mgW">
             <objects>
                 <viewController title="Postres" id="c8a-PR-CVf" customClass="OptionsController" sceneMemberID="viewController">
@@ -296,7 +297,10 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination">
+            <size key="portraitSize" width="320" height="480"/>
+            <size key="landscapeSize" width="480" height="320"/>
+        </simulatedScreenMetrics>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="qd8-7h-MuN"/>

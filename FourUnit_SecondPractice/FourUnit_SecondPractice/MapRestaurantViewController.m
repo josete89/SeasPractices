@@ -9,11 +9,7 @@
 #import "MapRestaurantViewController.h"
 #import "Commons/UtilsSaveRestaurantGuide.h"
 #import "RestaurantAnnotation.h"
-@interface MapRestaurantViewController ()
 
-
-
-@end
 
 @implementation MapRestaurantViewController
 

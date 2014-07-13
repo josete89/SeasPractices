@@ -25,7 +25,7 @@ class Weather{
 
 class WeatherCore{
     
-    let apiKey = "4065b22063267529";
+    let apiKey = "eb4f596cc494ea33";
     
     let urlWeather = "http://api.wunderground.com/api/";
     
