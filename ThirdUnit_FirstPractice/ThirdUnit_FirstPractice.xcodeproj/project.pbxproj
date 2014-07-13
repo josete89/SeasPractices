@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		882804D3196E97E5008EC4AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 882804D2196E97E5008EC4AB /* main.m */; };
 		882804D6196E97E5008EC4AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 882804D5196E97E5008EC4AB /* AppDelegate.m */; };
-		882804D9196E97E5008EC4AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882804D8196E97E5008EC4AB /* ViewController.m */; };
 		882804DC196E97E5008EC4AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882804DA196E97E5008EC4AB /* Main.storyboard */; };
 		882804DE196E97E5008EC4AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882804DD196E97E5008EC4AB /* Images.xcassets */; };
 		882804EA196E97E5008EC4AB /* ThirdUnit_FirstPracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 882804E9196E97E5008EC4AB /* ThirdUnit_FirstPracticeTests.m */; };
@@ -56,8 +55,6 @@
 		882804D2196E97E5008EC4AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		882804D4196E97E5008EC4AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		882804D5196E97E5008EC4AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		882804D7196E97E5008EC4AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		882804D8196E97E5008EC4AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		882804DB196E97E5008EC4AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		882804DD196E97E5008EC4AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		882804E3196E97E5008EC4AB /* ThirdUnit_FirstPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdUnit_FirstPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,19 +110,13 @@
 		882804CF196E97E5008EC4AB /* ThirdUnit_FirstPractice */ = {
 			isa = PBXGroup;
 			children = (
+				88B9D6B4197289F3008F1B60 /* Views */,
+				88B9D6B2197289EB008F1B60 /* Controllers */,
 				882804D4196E97E5008EC4AB /* AppDelegate.h */,
 				882804D5196E97E5008EC4AB /* AppDelegate.m */,
-				882804D7196E97E5008EC4AB /* ViewController.h */,
-				882804D8196E97E5008EC4AB /* ViewController.m */,
 				882804DA196E97E5008EC4AB /* Main.storyboard */,
 				882804DD196E97E5008EC4AB /* Images.xcassets */,
 				882804D0196E97E5008EC4AB /* Supporting Files */,
-				88280581196EBFD3008EC4AB /* RestaurantGuidesTableViewController.h */,
-				88280582196EBFD3008EC4AB /* RestaurantGuidesTableViewController.m */,
-				88FFEF91196EDB9100D5D5E2 /* CreateRestaurantGuideViewController.h */,
-				88FFEF92196EDB9100D5D5E2 /* CreateRestaurantGuideViewController.m */,
-				88FFEF95196EE84100D5D5E2 /* DetailRestauranGuideViewController.h */,
-				88FFEF96196EE84100D5D5E2 /* DetailRestauranGuideViewController.m */,
 			);
 			path = ThirdUnit_FirstPractice;
 			sourceTree = "<group>";
@@ -163,6 +154,26 @@
 				88280577196EAA8B008EC4AB /* CommonsTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		88B9D6B2197289EB008F1B60 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88280581196EBFD3008EC4AB /* RestaurantGuidesTableViewController.h */,
+				88280582196EBFD3008EC4AB /* RestaurantGuidesTableViewController.m */,
+				88FFEF91196EDB9100D5D5E2 /* CreateRestaurantGuideViewController.h */,
+				88FFEF92196EDB9100D5D5E2 /* CreateRestaurantGuideViewController.m */,
+				88FFEF95196EE84100D5D5E2 /* DetailRestauranGuideViewController.h */,
+				88FFEF96196EE84100D5D5E2 /* DetailRestauranGuideViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		88B9D6B4197289F3008F1B60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				882804D9196E97E5008EC4AB /* ViewController.m in Sources */,
 				88FFEF93196EDB9100D5D5E2 /* CreateRestaurantGuideViewController.m in Sources */,
 				88FFEF97196EE84100D5D5E2 /* DetailRestauranGuideViewController.m in Sources */,
 				88280583196EBFD3008EC4AB /* RestaurantGuidesTableViewController.m in Sources */,

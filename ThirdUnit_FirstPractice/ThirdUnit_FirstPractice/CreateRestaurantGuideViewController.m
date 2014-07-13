@@ -10,8 +10,6 @@
 
 @interface CreateRestaurantGuideViewController ()
 
-
-
 @end
 
 @implementation CreateRestaurantGuideViewController
@@ -61,14 +59,14 @@
 
 -(void)saveTempState{
     RestauranGuide* restaurant = [self populateRestaurnatGuide];
-    if (restaurant.name) {
+    if (restaurant.name && restaurant.name.length>0) {
         [UtilsSaveRestaurantGuide saveTemporaryRestaurantGuide:restaurant];
     }
 }
 
 -(void)restoreState{
     RestauranGuide* restaurant = [self populateRestaurnatGuide];
-    if (restaurant.name) {
+    if (restaurant.name && restaurant.name.length>0) {
         [UtilsSaveRestaurantGuide removeTempResturantGuide:restaurant];
     }
 }
@@ -136,6 +134,9 @@
     return restaurantGuide;
 }
 
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 /*
 #pragma mark - Navigation
 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		881C542D196F4DA400B5BBC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C542C196F4DA400B5BBC9 /* main.m */; };
 		881C5430196F4DA400B5BBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C542F196F4DA400B5BBC9 /* AppDelegate.m */; };
-		881C5433196F4DA400B5BBC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C5432196F4DA400B5BBC9 /* ViewController.m */; };
 		881C5436196F4DA400B5BBC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881C5434196F4DA400B5BBC9 /* Main.storyboard */; };
 		881C5438196F4DA400B5BBC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881C5437196F4DA400B5BBC9 /* Images.xcassets */; };
 		881C5444196F4DA400B5BBC9 /* FourUnit_FirstPracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 881C5443196F4DA400B5BBC9 /* FourUnit_FirstPracticeTests.m */; };
@@ -56,8 +55,6 @@
 		881C542C196F4DA400B5BBC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		881C542E196F4DA400B5BBC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		881C542F196F4DA400B5BBC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		881C5431196F4DA400B5BBC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		881C5432196F4DA400B5BBC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		881C5435196F4DA400B5BBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		881C5437196F4DA400B5BBC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		881C543D196F4DA400B5BBC9 /* FourUnit_FirstPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourUnit_FirstPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,8 +118,6 @@
 				881C5452196F4E0000B5BBC9 /* DetailRestauranGuideViewController.m */,
 				881C542E196F4DA400B5BBC9 /* AppDelegate.h */,
 				881C542F196F4DA400B5BBC9 /* AppDelegate.m */,
-				881C5431196F4DA400B5BBC9 /* ViewController.h */,
-				881C5432196F4DA400B5BBC9 /* ViewController.m */,
 				881C5434196F4DA400B5BBC9 /* Main.storyboard */,
 				881C5437196F4DA400B5BBC9 /* Images.xcassets */,
 				881C542A196F4DA400B5BBC9 /* Supporting Files */,
@@ -288,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881C5433196F4DA400B5BBC9 /* ViewController.m in Sources */,
 				881C5454196F4E0000B5BBC9 /* CreateRestaurantGuideViewController.m in Sources */,
 				881C5455196F4E0000B5BBC9 /* DetailRestauranGuideViewController.m in Sources */,
 				881C5453196F4E0000B5BBC9 /* RestaurantGuidesTableViewController.m in Sources */,
